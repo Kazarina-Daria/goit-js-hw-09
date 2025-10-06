@@ -23,9 +23,13 @@ function handlersubmit(e) {
   e.preventDefault();
   if (!formData.email || !formData.message) {
     alert('Fill please all fields');
+    e.currentTarget.reset();
+  localStorage.removeItem(STORAGE_KEY);
     return;
   }
   e.currentTarget.reset();
+    console.log(formData);
   localStorage.removeItem(STORAGE_KEY);
+
 
 }
