@@ -30,7 +30,7 @@ function handlersubmit(e) {
   e.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
   formData.email="";
-  form.message="";
+  formData.message="";
 
 
 }
